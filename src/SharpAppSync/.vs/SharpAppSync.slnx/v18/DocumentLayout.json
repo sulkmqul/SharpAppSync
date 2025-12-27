@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "F:\\\u4F5C\u696D\u9818\u57DF\\P\\SharpAppSync\\src\\SharpAppSync\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD63B1F-52E9-0916-FA22-3FCF7FDEB39C}|SharpAppSync\\SharpAppSync.csproj|f:\\\u4F5C\u696D\u9818\u57DF\\p\\sharpappsync\\src\\sharpappsync\\sharpappsync\\cropsettingwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{7FD63B1F-52E9-0916-FA22-3FCF7FDEB39C}|SharpAppSync\\SharpAppSync.csproj|solutionrelative:sharpappsync\\cropsettingwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7FD63B1F-52E9-0916-FA22-3FCF7FDEB39C}|SharpAppSync\\SharpAppSync.csproj|f:\\\u4F5C\u696D\u9818\u57DF\\p\\sharpappsync\\src\\sharpappsync\\sharpappsync\\sharpappsync.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{7FD63B1F-52E9-0916-FA22-3FCF7FDEB39C}|SharpAppSync\\SharpAppSync.csproj|solutionrelative:sharpappsync\\sharpappsync.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CropSettingWindow.xaml",
+              "DocumentMoniker": "F:\\\u4F5C\u696D\u9818\u57DF\\P\\SharpAppSync\\src\\SharpAppSync\\SharpAppSync\\CropSettingWindow.xaml",
+              "RelativeDocumentMoniker": "SharpAppSync\\CropSettingWindow.xaml",
+              "ToolTip": "F:\\\u4F5C\u696D\u9818\u57DF\\P\\SharpAppSync\\src\\SharpAppSync\\SharpAppSync\\CropSettingWindow.xaml",
+              "RelativeToolTip": "SharpAppSync\\CropSettingWindow.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAADwvw4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-12-27T17:52:42.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SharpAppSync",
+              "DocumentMoniker": "F:\\\u4F5C\u696D\u9818\u57DF\\P\\SharpAppSync\\src\\SharpAppSync\\SharpAppSync\\SharpAppSync.csproj",
+              "RelativeDocumentMoniker": "SharpAppSync\\SharpAppSync.csproj",
+              "ToolTip": "F:\\\u4F5C\u696D\u9818\u57DF\\P\\SharpAppSync\\src\\SharpAppSync\\SharpAppSync\\SharpAppSync.csproj",
+              "RelativeToolTip": "SharpAppSync\\SharpAppSync.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-27T17:48:34.369Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

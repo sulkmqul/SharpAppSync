@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "SharpAppSync (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "SharpAppSync (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}

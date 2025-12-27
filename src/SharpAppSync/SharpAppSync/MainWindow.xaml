@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window
+    x:Class="SharpAppSync.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SharpAppSync"    
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:u="using:SharpAppSync.Capture"
+    Title="CaptureApp"
+    Closed="Window_Closed"
+    >
+
+    <Window.SystemBackdrop>
+        <MicaBackdrop />
+    </Window.SystemBackdrop>
+
+    <Grid Name="Root" Loaded="Root_Loaded">
+        <u:DxAppCaptureCotrol x:Name="CaptureControl"></u:DxAppCaptureCotrol>
+        <Grid.ContextFlyout>
+            <MenuFlyout>
+                <MenuFlyoutItem Text="キャプチャ開始" Click="MenuCaptureStart_Click"/>
+                <MenuFlyoutItem Text="キャプチャ停止" Click="MenuCaptureStop_Click"/>
+                <MenuFlyoutSeparator></MenuFlyoutSeparator>
+                <ToggleMenuFlyoutItem Text="Strech" IsChecked="True" Click="MenuImageStretch_Click"></ToggleMenuFlyoutItem>
+                <MenuFlyoutItem Text="切り抜き" Click="MenuImageCrop_Click"/>
+                <MenuFlyoutSeparator></MenuFlyoutSeparator>
+                <MenuFlyoutItem Text="終了" Click="MenuClose_Click"/>
+            </MenuFlyout>
+        </Grid.ContextFlyout>
+    </Grid>
+</Window>
