@@ -25,6 +25,7 @@
                 <MenuFlyoutSeparator></MenuFlyoutSeparator>
                 <ToggleMenuFlyoutItem Text="Strech" IsChecked="True" Click="MenuImageStretch_Click"></ToggleMenuFlyoutItem>
                 <MenuFlyoutItem Text="切り抜き" Click="MenuImageCrop_Click"/>
+                <ToggleMenuFlyoutItem Text="最大化" IsChecked="False" Click="MenuWindowMaximize_Click"></ToggleMenuFlyoutItem>
                 <MenuFlyoutSeparator></MenuFlyoutSeparator>
                 <MenuFlyoutItem Text="終了" Click="MenuClose_Click"/>
             </MenuFlyout>

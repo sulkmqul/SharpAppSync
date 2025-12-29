@@ -1,4 +1,5 @@
 using Microsoft.Graphics.Canvas;
+using Microsoft.UI.Windowing;
 using Microsoft.UI.Xaml;
 using Microsoft.UI.Xaml.Controls;
 using Microsoft.UI.Xaml.Controls.Primitives;
@@ -49,6 +50,37 @@ namespace SharpAppSync
 
         }
 
+
+        /// <summary>
+        /// 通常と最大化の切り替え
+        /// </summary>
+        /// <param name="f">true=最大化 false=通常Window表示</param>
+        private async Task ChangeWindowMode(bool f)
+        {
+            OverlappedPresenter? op = AppWindow.Presenter as OverlappedPresenter;
+            if(op == null)
+            {
+                return;
+            }
+
+            bool windowflag = !f;
+
+            //画面モード設定
+            op.IsResizable = windowflag;
+            op.IsAlwaysOnTop = windowflag;
+            op.SetBorderAndTitleBar(windowflag, windowflag);
+
+            if (f == true)
+            {
+                //最大化                
+                op.Maximize();
+                return;
+            }
+
+            //通常へ
+            op.Restore();
+        }
+
         //--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//
         //--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//--//
         /// <summary>
@@ -62,6 +94,10 @@ namespace SharpAppSync
             {
                 this.CaptureControl.SetCropRect(x);
             });
+
+            AppWindow.Resize(new Windows.Graphics.SizeInt32(800, 640));
+            
+
         }
 
         /// <summary>
@@ -129,14 +165,36 @@ namespace SharpAppSync
             this.CaptureControl.StretchImage = item.IsChecked;
         }
         
+        /// <summary>
+        /// 切り抜きメニュー選択
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MenuImageCrop_Click(object sender, RoutedEventArgs e)
         {            
             this.CropWindow?.Activate();
         }
 
+        /// <summary>
+        /// 閉じる処理
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void MenuClose_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
+        }
+
+
+        /// <summary>
+        /// 最大化最小化切り替え
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private async void MenuWindowMaximize_Click(object sender, RoutedEventArgs e)
+        {
+            var item = (ToggleMenuFlyoutItem)sender;
+            await this.ChangeWindowMode(item.IsChecked);
         }
     }
 }

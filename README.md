@@ -1,4 +1,8 @@
 # SharpAppSync
+<center>
+<img src="logo.png" width="200">
+</center>
+
 C# + WinUI3 + Windows.Graphics.Captureを利用した画面のキャプチャサンプルです。  
 
 
